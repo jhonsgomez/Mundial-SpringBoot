@@ -3,6 +3,7 @@ package mundial.app.Entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -14,9 +15,10 @@ public class Partido {
     private Equipo equipo1;
     @DocumentReference
     private Equipo equipo2;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fecha;
-    private int golesEquipo1;
-    private int golesEquipo2;
+    private Integer golesEquipo1;
+    private Integer golesEquipo2;
 
     public Partido() {}
 
@@ -44,16 +46,16 @@ public class Partido {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
-    public int getGolesEquipo1() {
+    public Integer getGolesEquipo1() {
         return golesEquipo1;
     }
-    public void setGolesEquipo1(int golesEquipo1) {
+    public void setGolesEquipo1(Integer golesEquipo1) {
         this.golesEquipo1 = golesEquipo1;
     }
-    public int getGolesEquipo2() {
+    public Integer getGolesEquipo2() {
         return golesEquipo2;
     }
-    public void setGolesEquipo2(int golesEquipo2) {
+    public void setGolesEquipo2(Integer golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
 }

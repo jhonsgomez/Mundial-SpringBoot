@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    min-height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main .return {
+    height: 15%;
+    padding: 20px;
+}
+
+main .return a {
+    background-color: #71152B;
+    color: #FFFFFF;
+    border: 2px solid #71152B;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+main .return a:hover {
+    background-color: #FFFFFF;
+    color: #71152B;
+    border: 2px solid #71152B;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+main .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+main .cont form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #71152B;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 70%;
+}
+
+main .cont form .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+main .cont form .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+main .cont form .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+main .cont form .button button {
+    background-color: #71152B;
+    color: #FFFFFF;
+    border: 2px solid #71152B;
+    border-radius: 10px;
+    padding: 10px 30px;
+}

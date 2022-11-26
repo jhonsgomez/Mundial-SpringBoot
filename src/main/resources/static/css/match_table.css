@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 2px solid #71152B;
+}
+
+header .cont_header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #71152B;
+}
+
+header .cont_header .logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+header .cont_header .logo a {
+    width: 8%;
+    height: 90%;   
+}
+
+header .cont_header .logo a img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+header .cont_header .welcome {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+}
+
+header .cont_header .welcome a {
+    background-color: #FFFFFF;
+    border: 2px solid #71152B;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #71152B;
+    margin: 0px 50px;
+}
+
+header .cont_header .welcome a:hover {
+    background-color: #71152B;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    margin: 0px 50px;
+}
+
+main {
+    width: 100%;
+    height: 90%;
+}
+
+main .cont {
+    width: 100%;
+    height: 100%;
+}
+
+main .cont .cont_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+main .cont .cont_main .add {
+    background-color: #71152B;
+    border: 2px solid #71152B;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 10px;
+    margin: 0px 50px;
+}
+
+main .cont .cont_main .add:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #71152B;
+    color: #71152B;
+    text-decoration: none;
+    margin: 0px 50px;
+}
+
+main .cont .cont_main table {
+    width: auto;
+    border: 2px solid #71152B;
+}
+
+@media screen and (max-width: 720px) {
+
+    header .cont_header .logo a {
+        width: 35%;
+        height: 90%;   
+    }
+
+}

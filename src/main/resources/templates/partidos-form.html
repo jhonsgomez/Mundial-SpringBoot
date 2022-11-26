@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Formulario partidos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{/css/match_form.css}">
+    <link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<main>
+    <div class="return">
+        <a th:href="@{/partidos/}">Regresar</a>
+    </div>
+    <div class="cont">
+        <form th:action="@{/partidos/save}" th:object="${partido}" method="post">
+            <input type="hidden" th:field="*{id}">
+            <div class="box">
+                <div class="local">
+                    <label for="local">Local: </label>
+                    <select th:field="*{equipo1}" id="local">
+                        <option th:each="equipo : ${equipos}" th:value="${equipo.id}">[[ ${equipo.nombre} ]]</option>
+                    </select>
+                </div>
+                <div class="visitor">
+                    <label for="visitor">Visitante: </label>
+                    <select th:field="*{equipo2}" id="visitor">
+                        <option th:each="equipo : ${equipos}" th:value="${equipo.id}">[[ ${equipo.nombre} ]]</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <label for="date">Fecha del partido: </label>
+                    <input id="date" type="date" th:field="*{fecha}">
+                </div>
+                <label class="text-center col-12">Marcador: </label>
+                <div class="row">
+                    <div class="goal1">
+                        <input type="text" th:field="*{golesEquipo1}">
+                    </div>
+                    <p class="mt-2">_</p>
+                    <div class="goal2">
+                        <input type="text" th:field="*{golesEquipo2}">
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Agregar</button>
+            </div>
+        </form>
+    </div>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js}" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+
+</html>

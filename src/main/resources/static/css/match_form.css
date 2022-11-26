@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    min-height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main .return {
+    height: 15%;
+    padding: 20px;
+}
+
+main .return a {
+    background-color: #71152B;
+    color: #FFFFFF;
+    border: 2px solid #71152B;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+main .return a:hover {
+    background-color: #FFFFFF;
+    color: #71152B;
+    border: 2px solid #71152B;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+main .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+main .cont form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #71152B;
+    border-radius: 10px;
+    padding: 20px;
+    width: auto;
+    height: 70%;
+    padding: 0px 70px;
+}
+
+main .cont form .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+}
+
+main .cont form .box .local {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 20px;
+}
+
+main .cont form .box .goal1 {
+    display: flex;
+    margin: 20px;
+}
+
+main .cont form .box .goal1 input {
+    width: 20px;
+    height: 20px;
+}
+
+main .cont form .box .goal2 {
+    display: flex;
+    margin: 20px;
+}
+
+main .cont form .box .goal2 input {
+    width: 20px;
+    height: 20px;
+}
+
+main .cont form .box .visitor {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 20px;
+}
+
+main .cont form .box .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 20px;
+}
+
+main .cont form .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+main .cont form .button button {
+    background-color: #71152B;
+    color: #FFFFFF;
+    border: 2px solid #71152B;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
